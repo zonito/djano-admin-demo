@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>1. Django Demo</title>
+    </head>
+    <body>
+        it is now {{now}}.
+        <hr/>
+        <form action="/add">
+        {{userform}}
+          <input type="submit" value="Add">
+        </form>
+        <hr/>
+        <table>
+          <tr>
+            <th>
+              Names
+            </th>
+          </tr>
+          {% for user in users %}
+          <tr>
+            <td>
+              {{user.name}} {% if user.name_count %}({{user.name_count}}){% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </table>
+    </body>
+</html>
