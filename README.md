@@ -3,18 +3,23 @@ djano-admin-demo
 
 Django Admin Demo + Bootstrap
 
-## Step 1: Sync DB and configure
+### Step 1: create database in mysql
+```
+CREATE DATABASE djangodemo;
+```
+
+### Step 2: Sync DB and configure
 ```
 python manage.py syncdb
 ```
 
-## Step 2: Install [django-admin-bootstrap](https://github.com/django-admin-bootstrapped/django-admin-bootstrapped)
+### Step 3: Install [django-admin-bootstrap](https://github.com/django-admin-bootstrapped/django-admin-bootstrapped)
 ```
 pip install django-admin-bootstrapped
 ```
 Copy django-admin-bootstrapped folder to root.
 
-## Step 3: Runserver
+### Step 4: Runserver
 ```
 python manage.py runserver
 ```
